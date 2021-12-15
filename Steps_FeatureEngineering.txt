@@ -1,0 +1,43 @@
+1.) In raw_data ,columns having missing values for more than 50% of the rows were dropped.
+
+2.) The historical data of customers(raw_data2) was analyzed and it was found that 2 customers
+ i.e, 2 id's were having no historical data, therefore those 2 rows were dropped from 
+historical data(raw_data2) as well as from raw_data.
+
+3.) For all other id's average value was calculated for each of the 6 columns.
+
+4.) churn_data, raw_data2, raw_data were joined on 'id' column.
+
+5.) This whole data was saved as " merged_data_training.csv ".
+
+6.) Now the aim was to convert categorical data to numerical data, and to handle the missing values
+in "merged_data_training.csv", so as to make our data clean and ready for EDA and model training.
+
+7.) Missing values in column 'origin_up' were replaced by the 
+most common(mode) value, and missing values in 
+column 'channel_sales' were replaced by 'unknown'.
+
+8.) As the cardinality of  'channel_sales' , 'origin_up'  columns was low , therefore they were encoded using 
+pd.get_dummies().
+
+9.) Column 'has_gas' was encoded to ones/zeroes instead of   ' f ' / 't' .
+
+10.) All columns describing dates were changed to  'float_64'  datatype, described in a way like:-
+(Year).(month_number) , example 2016-05-20 was changed to 2016.05
+
+11.) Missing values in date columns('date_renewal','date_end','date_modif_prod') were replaced 
+by median() values calculated on the basis of churn-Yes/No .
+
+12.) Missing values in all other columns were replaced by mean() values.
+
+13.) Then for dimensionality reduction, we first calculated correlation between different features and 
+dropped some features that were highly correlated with other features.
+To decide which feature out of two coorelated features, we should drop, I calculated the variance 
+of both features, and the feature which had higher variance was kept and the other one was dropped.
+As feature with high variance is more imp than feature with low variance
+(PCA also uses this concept).
+
+14.) Then I trained a RandomForest using the data, and thus found the feature importance values for each faeture,
+and dropped the features that had low feature importance value.
+
+15.) This was the final cleaned data that was used for EDA.
