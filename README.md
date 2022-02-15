@@ -3,10 +3,11 @@ Virtual Experience Program by BCG.
 
 # __________________________________________________________________
 ## Files provided by BCG:-
-### 1.) ml_case_training_data.csv  -->  csv file containing all features of clients.
-### 2.) ml_case_training_hist_data.csv  -->  csv file containing 'price' of 2015 (historical data).
-### 3.) ml_case_training_output.csv  -->  contains the info which client churns and which doesn't churns.
-### 4.) Discount Impact Task4, MUST READ --> Impact of Discount on churn rate, provided after submission of our solution, for review.
+### 1.) Task_Description_Task2.pptx --> Task Description for second Task
+### 2.) ml_case_training_data.csv  -->  csv file containing all features of clients.
+### 3.) ml_case_training_hist_data.csv  -->  csv file containing 'price' of 2015 (historical data).
+### 4.) ml_case_training_output.csv  -->  contains the info which client churns and which doesn't churns.
+### 5.) Discount Impact Task4, MUST READ --> Impact of Discount on churn rate, provided after submission of our solution, for review.
 # _________________________________________________________________
 
 ## Files made by me, solving the tasks:-
