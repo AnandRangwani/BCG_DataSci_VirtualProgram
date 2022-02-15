@@ -24,3 +24,4 @@ Virtual Experience Program by BCG.
 ### 10.) OverSampled_testData_ML_modelling.csv  -->  It contains over-sampled data that is kept aside to check model's accuracy.
 ### 11.) final_model.pkl  -->  pickle file containing final trained model used for extracting interpretations.
 ### 12.) Interpretations_from_ML_model -->  'final_model.pkl' used to make interpretations that whether giving 20% discount to clients is a good step to reduce churn or not.
+### 13.) BCG_Task5.pdf --> Insights from data, and summary of Model interpretation.
