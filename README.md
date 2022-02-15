@@ -3,6 +3,7 @@ Virtual Experience Program by BCG.
 
 # __________________________________________________________________
 ## Files provided by BCG:-
+### Data Description --> Meta Data(Describing features)
 ### 1.) Task_Description_Task2.pptx --> Task Description for second Task
 ### 2.) ml_case_training_data.csv  -->  csv file containing all features of clients.
 ### 3.) ml_case_training_hist_data.csv  -->  csv file containing 'price' of 2015 (historical data).
